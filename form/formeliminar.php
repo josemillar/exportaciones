@@ -15,5 +15,6 @@ While($Registro=$oProducto->Selecciona()){
 }
 
 ?>
-<input type="submit" value="Eliminar">
+<input type="submit" value="Eliminar"> <input type="button" onclick="history.back()" name="volver" value="volver">
+
 </form>

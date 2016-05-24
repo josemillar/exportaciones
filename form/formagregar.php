@@ -27,7 +27,7 @@ $oProducto=new Producto();
                 <input id="ano" class="input" name="ano" type="text" value="" size="30"></input><br />
 	</div>
     
-        <input type="submit" value="Agregar">
+        <input type="submit" value="Agregar">   <input type="button" onclick="history.back()" name="volver" value="volver">     
 </form>
     </body>
     </html>

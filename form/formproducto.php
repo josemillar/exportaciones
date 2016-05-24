@@ -13,5 +13,5 @@ While($RegAlumno=$oProducto->Selecciona()){
 }
 
 ?>
-<input type="submit" value="Enviar notas">
+<input type="submit" value="Enviar notas">  <input type="button" onclick="history.back()" name="volver" value="volver">
 </form>

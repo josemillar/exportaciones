@@ -14,6 +14,7 @@
 include('menu.php');
 include('/form/formagregar.php');
 ?>
+    
 </body>
 </html>
 

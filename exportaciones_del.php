@@ -16,6 +16,7 @@ include('valida_acceso.php');
 include('menu.php');
 include('/form/formeliminar.php');
 ?>
+   
 </body>
 </html>
 

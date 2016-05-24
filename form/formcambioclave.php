@@ -20,7 +20,7 @@ $oProducto=new Producto();
                 <input id="total" class="input" name="newpwd" type="text" value="" size="30"></input><br />
 	</div>
             
-        <input type="submit" value="Cambiar">
+        <input type="submit" value="Cambiar">  <input type="button" onclick="history.back()" name="volver" value="volver">        
 </form>
     </body>
     </html>

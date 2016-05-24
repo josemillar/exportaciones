@@ -1,9 +1,12 @@
 <?php
 include("../librerias.php");
-$oPro=new Producto();
-foreach ($_POST as $id){
-	$oPro->Agregar($id);	
-};
+$nid= $_POST["idProducto"];
+$snom= $_POST["Nombre"];
+$ntot= $_POST["Total"];
+$nano= $_POST["ano"];
+
+$oPro=new Producto($nid,$snom,$ntot,$nano);
+
 ?>
 
 <script>
