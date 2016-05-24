@@ -1,11 +1,12 @@
 <?php
 include("../librerias.php");
-$nid= $_POST["idProducto"];
-$snom= $_POST["Nombre"];
-$ntot= $_POST["Total"];
+session_start();
+$oUsr=$_SESSION["oUsuario"];
+$nidproducto= $_POST["idProducto"];
+$snombre= $_POST["Nombre"];
+$ntotalusd= $_POST["Total"];
 $nano= $_POST["ano"];
-
-$oPro=new Producto($nid,$snom,$ntot,$nano);
+$oPro=new Producto($nidproducto,$snombre,$ntotalusd,$nano);
 
 ?>
 
