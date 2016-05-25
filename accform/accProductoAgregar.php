@@ -1,15 +1,20 @@
 <?php
 include("../librerias.php");
+$oP = new Producto($nid=Null, $snom=NULL, $ntot=NULL, $nano=NULL);
+//$newpewd=$_POST['newpwd'];
+$nombre=$_POST['nombre'];
+$total=$_POST['total'];
+$anno=$_POST['anno'];
 session_start();
-$oUsr=$_SESSION["oUsuario"];
-$nidproducto= $_POST["idProducto"];
-$snombre= $_POST["Nombre"];
-$ntotalusd= $_POST["Total"];
-$nano= $_POST["ano"];
-$oPro=new Producto($nidproducto,$snombre,$ntotalusd,$nano);
-
-?>
-
+if (!isset($_SESSION["oUsuario"])){
+	?>
+<!-- Reenvio a la p�gina principal-->
 <script>
-	document.location.href="<?=PATHURL?>exportaciones_add.php";
+	document.location.href="index.php";
 </script>
+<?php 
+}
+$oUsr=$_SESSION["oUsuario"];
+//var_dump($oUsr);
+if($oP->insert($nombre,$total,$anno,$oUsr->getIdacceso())) echo "producto ingresado"; else echo "ERROR";
+?>
